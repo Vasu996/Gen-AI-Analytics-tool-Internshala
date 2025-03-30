@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Data Query Dashboard Prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based dashboard prototype for a Gen AI Analytics tool with a modern, intuitive UI. This tool allows users to query data using natural language and visualize the results in various formats, such as line charts, bar charts, and pie charts.
 
-## Available Scripts
+## Features
+- **Natural Language Query Input**: Users can input queries in plain language to fetch data insights.
+- **Query History**: Interactive recent searches for quick access to past queries.
+- **Multiple Visualizations**:
+  - Line Chart for trend analysis.
+  - Bar Chart for comparisons.
+  - Pie Chart for category distributions.
+- **Dynamic Chart Switching**: Users can toggle between different chart types seamlessly.
+- **Premium UI Design**:
+  - Card-based layout with subtle shadows.
+  - Gradient backgrounds and modern buttons.
+  - Responsive design for all screen sizes.
+  - Clean typography and interactive hover effects.
+- **Loading States and Error Handling**:
+  - Animated spinner for loading states.
+  - User-friendly error messages for failed queries.
+- **Customizable Themes**: Easily update colors and styles using Tailwind CSS.
 
-In the project directory, you can run:
+## Tech Stack
+- **Frontend**: React.js
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Data Visualization**: Recharts
+- **Build Tool**: Vite (or Create React App, if applicable)
 
-### `npm start`
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vasu996/Gen-AI-Analytics-tool-Internshala.git
+2.Navigate to the project directory:
+cd Gen-AI-Analytics-tool-Internshala
+3.Install dependencies:
+npm install
+4.Start the development server:
+npm start
+5.Open your browser and navigate to http://localhost:3000.
+6.Deployment
+The application can be deployed on platforms like Netlify or Vercel. Once deployed, the live application will be accessible at: [Deployment URL].
+Project Structure
+src/
+├── components/
+│   ├── [ResultsDisplay.js]   # Main component for displaying query results
+│   ├── QueryInput.js       # Component for natural language query input
+│   ├── QueryHistory.js     # Component for displaying recent queries
+│   └── ChartSwitcher.js    # Component for toggling between chart types
+├── redux/
+│   ├── querySlice.js       # Redux slice for managing query state
+│   └── store.js            # Redux store configuration
+├── styles/
+│   └── tailwind.css        # Tailwind CSS configuration
+├── App.js                  # Root component
+├── index.js                # Entry point
+└── assets/                 # Static assets (images, icons, etc.)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+How It Works
+Query Input: Users type a natural language query into the input box.
+Data Fetching: The query is processed, and data is fetched from the backend or a mock API.
+Visualization: The fetched data is displayed in the selected chart type (Line, Bar, or Pie).
+Interactive Features: Users can switch between chart types, view query history, and handle errors gracefully.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Future Enhancements
+Authentication: Add user login and session management.
+Export Options: Allow users to export visualizations as images or PDFs.
+Advanced Filters: Enable users to filter data by date, category, or other parameters.
+Backend Integration: Connect to a real backend API for dynamic data fetching.
+Dark Mode: Add a toggle for light and dark themes.
 
-### `npm test`
+License
+This project is licensed under the MIT License.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contact
+For any questions or feedback, feel free to reach out:
 
-### `npm run build`
+Author: Vasu
+GitHub: https://github.com/Vasu996
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
